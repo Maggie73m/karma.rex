@@ -1,22 +1,184 @@
-
+/* style.css */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #000000;
 }
-.container {
-  max-width: 800px;
-  margin: auto;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #000000;
+  color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
-.container h1 {
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1; /* Allows the flex item to grow and take up available space */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
   text-align: center;
+
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax {
+  background-image: url('Assets/img/Me_aferro_a_la_vida.jpg');
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about {
+  padding: 100px 50px 50px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
-.container p {
+
+.about-content {
+  max-width: 800px;
   text-align: justify;
+}
+
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+}
+
+form button {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 10%;
+      background-color: #000000;
+      padding: 20px;
+      border-radius: 5px;
+  }
+
+  .burger {
+      display: block;
+  }
+
+  .nav-active {
+      display: flex;
+  }
 }
