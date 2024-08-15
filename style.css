@@ -1,4 +1,4 @@
-/* style.css */
+/* styles.css */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -8,16 +8,17 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
   background-color: #000000;
   color: #FFFFFF;
-  position: fixed;
-  width: 100%;
+  padding: 20px;
+  text-align: center;
+  position: fixed; 
+  width: 100%; 
   top: 0;
-  z-index: 1000;
+  z-index: 100; 
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
 }
 
 .logo {
@@ -25,12 +26,17 @@ header {
   font-weight: bold;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav-links {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   gap: 20px;
-  justify-content: center;
-  flex-grow: 1; /* Allows the flex item to grow and take up available space */
+  margin: 0;
 }
 
 .nav-links li {
@@ -40,9 +46,6 @@ header {
 .nav-links a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 18px;
-  text-align: center;
-
 }
 
 .burger {
@@ -62,6 +65,7 @@ header {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  padding-top: 80px;
 }
 
 .parallax {
@@ -172,6 +176,7 @@ footer nav ul li a {
       background-color: #000000;
       padding: 20px;
       border-radius: 5px;
+      width: 200px;
   }
 
   .burger {
