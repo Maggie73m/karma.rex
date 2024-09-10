@@ -1,75 +1,13 @@
-/* styles.css */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-}
-
-header {
-  background-color: #000000;
-  color: #FFFFFF;
-  padding: 20px;
-  text-align: center;
-  position: fixed; 
-  width: 100%; 
-  top: 0;
-  z-index: 100; 
-  display: flex;
-  /*justify-content: space-between;*/
-  align-items: center;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #FFFFFF;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
+/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 80px; /* Espacio para el header fijo */
 }
 
 .parallax {
-  background-image: url('Assets/img/Me_aferro_a_la_vida.jpg');
+  background-image: url('Assets/img/fondo1.3.jpeg');
   height: 100%;
   width: 100%;
   background-attachment: fixed;
@@ -92,6 +30,7 @@ nav {
   border-radius: 10px;
 }
 
+/* About Section */
 .about {
   padding: 100px 50px 50px;
   text-align: left;
@@ -112,6 +51,7 @@ nav {
   text-align: justify;
 }
 
+/* Contact Section */
 .contact {
   padding: 50px;
   text-align: center;
@@ -142,6 +82,7 @@ form button {
   cursor: pointer;
 }
 
+/* Footer */
 footer {
   background-color: #000000;
   color: #FFFFFF;
@@ -164,26 +105,69 @@ footer nav ul li a {
   text-decoration: none;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-      position: absolute;
-      top: 60px;
-      right: 10%;
-      background-color: #000000;
-      padding: 20px;
-      border-radius: 5px;
-      width: 200px;
+  .about {
+      padding: 50px 20px; /* Reduce padding para pantallas pequeñas */
   }
 
-  .burger {
-      display: block;
+  .hero-text h1 {
+      font-size: 40px; /* Reduce tamaño del texto en pantallas pequeñas */
+      padding: 15px;
   }
 
-  .nav-active {
-      display: flex;
+  .parallax {
+      background-attachment: scroll; /* Desactiva el parallax en pantallas pequeñas para mejor rendimiento */
+  }
+
+  .about img {
+      width: 150px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  }
+
+  .contact, .about-content {
+      padding: 20px; /* Reduce padding en secciones */
+  }
+
+  form input, form textarea {
+      padding: 8px; /* Ajusta el padding en los inputs */
+  }
+}
+/* About Section */
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 50px;
+}
+
+.about-content {
+  flex: 2;
+  text-align: justify;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 300px; /* Ajusta según el diseño deseado */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .about-container {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+      align-items: center;
+      text-align: center; /* Centra el texto */
+  }
+
+  .about-image {
+      max-width: 80%; /* Ajusta el ancho de la imagen en pantallas pequeñas */
+      margin-top: 20px; /* Añade margen superior para separación */
   }
 }

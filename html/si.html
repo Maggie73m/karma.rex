@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web interactiva</title>
+    <link rel="stylesheet" href="../styles/stylePotafolio.css">
+    <link rel="stylesheet" href="../styles/styleCV.css">
+</head>
+<body id="index-page">
+    <header>
+        <div class="logo">KARMA</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Obra <span class="caret">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="html/Videojuegos.html">Videojuegos</a></li>
+                        <li><a href="html/foto.html">Fotografía</a></li>
+                        <li><a href="html/2D.html">Dibujo</a></li>
+                        <li><a href="html/3D.html">Modelado 3D</a></li>
+                        <li><a href="html/Web.html">Web interactiva</a></li>
+                    </ul>
+                </li>
+                <li><a href="Bio.html">Bio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="sobre-mi" class="about">
+        <div class="about-content">
+            <h2>BIOGRAFÍA</h2>
+            
+            <div class="bio-item">
+                <div class="bio-text">
+                    <p>
+                        Ecofeminista, desarrolladora de videojuegos, artista 2D y 3D, y fotógrafa. Se encuentra actualmente cursando la carrera de Artes y Comunicaciones Digitales. Cuenta con estudios complementarios sobre género y prevención de abuso infantil.
+                    </p>
+                    <p>
+                        Expuso en la primera edición de "SOY MUJER LATINOAMERICANA" en 2024, una exposición de fotografía que celebra la visión y creatividad de las mujeres latinoamericanas.
+                    </p>
+                    <p>
+                        Ha sido ponente en conferencias sobre mujeres en los videojuegos y la humanización de la tecnología. Fungió como consejera y colegiada académica.
+                    </p>
+                    <img src="../Assets/img/yoRayada.jpeg" alt="Imagen de Yo" >
+                    <img src="../Assets/img/yo.jpeg" alt="Imagen de Yo" >
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- Imagen vertical a la derecha -->
+        <div class="vertical-img">
+            <img src="../Assets/img/fondo2.jpeg" alt="Vertical Image">
+        </div>
+    </section>
+    
+    
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit" class="btn-red">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 KARMA. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#privacidad">Políticas de Privacidad</a></li>
+                <li><a href="#terminos">Términos de Servicio</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+    
+
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>

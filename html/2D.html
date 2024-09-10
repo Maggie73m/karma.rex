@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujos</title>
+    <link rel="stylesheet" href="../styles/stylePotafolio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">KARMA</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Obra <span class="caret">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="videojuegos.html">Videojuegos</a></li>
+                        <li><a href="foto.html">Fotografía</a></li>
+                        <li><a href="2d.html">Dibujo</a></li>
+                        <li><a href="3d.html">Modelado 3D</a></li>
+                        <li><a href="web.html">Web interactiva</a></li>
+                    </ul>
+                </li>
+                
+                
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+
+    
+    
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="filterImages('rojo')">Rojo</a></li>
+                <li><a href="#" onclick="filterImages('azul')">Morado</a></li>
+                <li><a href="#" onclick="filterImages('verde')">B/N</a></li>
+                <li><a href="#" onclick="filterImages('rosa')"></a></li>
+            </ul>
+        </aside>
+
+        <section class="gallery">
+            <div id="rojo" class="gallery-section">
+                <h2>Rojo</h2>
+                
+                <div class="gallery-items">
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Me_aferro_a_la_vida.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>Me aferro a la vida</p>
+                            <p>(Collage tradicional, 2024)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Rojo3.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>Contructo</p>
+                            <p>(Ilustración digital,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Rojo4.jpeg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(Ilustración digital,2023)</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- Más imágenes -->
+                </div>
+            </div>
+            <!-- Otras secciones (Azul, Verde, Rosa) -->
+            <div id="azul" class="gallery-section">
+                <h2>Morado</h2>
+                <div class="gallery-items">
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Morado1.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>(Ilustración digital,2024)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Morado3.jpeg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>Fondo para Croquette</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Morado2.jpeg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(Ilustración digital,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Morado4.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>Sola</p>
+                            <p>(Ilustración digital,2024)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/Morado5.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(Fondo 2023)</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Más imágenes -->
+                </div>
+            </div>
+            <!-- Otras secciones (Azul, Verde, Rosa) -->
+            <div id="verde" class="gallery-section">
+                <h2>B/N</h2>
+                <div class="gallery-items">
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/BN1.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>(SANGRE)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/Dibujo/BN2.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(MIRA)</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!-- Más imágenes -->
+                </div>
+            </div>
+            <!-- Otras secciones (Azul, Verde, Rosa) -->
+            <div id="rosa" class="gallery-section">
+                <h2>INTERVENIDAS</h2>
+                <div class="gallery-items">
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/calle1.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>(8M Toluca. Edo.Mex. 2022)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/Policia2.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(8M Toluca. Edo.Mex. 2022)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/Policia3.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>(8M Toluca. Edo.Mex. 2022)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/Ambiente1.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(Dia de la tierra, Toluca Edo.Mex.,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/8M2022_1.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>(8M, Toluca Edo.Mex.,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/8m2024_2.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>(8M2022_1, Toluca Edo.Mex.,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/Ambiente3.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(Dia de la tierra, Toluca Edo.Mex.,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/28S1.jpg" alt="Obra Roja 1">
+                        <div class="overlay">
+                            <p>(28S, Toluca Edo.Mex,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/28S2.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(28S, Toluca Edo.Mex,2023)</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../Assets/fotos/Ambiente2.jpg" alt="Obra Roja 2">
+                        <div class="overlay">
+                            <p>(Dia de la tierra, Toluca Edo.Mex.,2023)</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Más imágenes -->
+                </div>
+            </div>        
+        </section>
+    </div>
+
+    <script src="../js/portfolio.js"></script>
+</body>
+</html>
